@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="프라임애드 온라인마케팅 — 신규창업자·기존사업자 맞춤 마케팅 전략. 무료 상담 신청.">
+<meta property="og:title" content="광고비 제대로 쓰고 계세요? | 프라임애드">
+<meta property="og:description" content="소액 예산부터 시작 가능. 플레이스·블로그·검색광고·메타·언론홍보. 지금 무료 상담.">
+<title>광고비 제대로 쓰고 계세요? | 프라임애드 온라인마케팅</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Noto Sans KR',sans-serif;background:#FFFDF5;color:#1C1C1C;-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;}
+
+:root{
+  --y:#F5C800;
+  --y2:#FFE566;
+  --y3:#FFF9D6;
+  --g:#2BA84A;
+  --g2:#E6F7EB;
+  --g3:#C0EAC9;
+  --r:#E8281E;
+  --r2:#FFECEB;
+  --r3:#FFCECE;
+  --ink:#1C1C1C;
+  --ink2:#555;
+  --ink3:#999;
+  --white:#FFFFFF;
+  --cream:#FFFDF5;
+  --bg2:#F7F4E8;
+  --border:#E5E0CC;
+  --W:820px;
+}
+
+.wrap{max-width:var(--W);margin:0 auto;padding:0 20px;}
+.section{padding:56px 0;border-bottom:2px solid var(--border);}
+.section:last-of-type{border-bottom:none;}
+
+.sec-tag{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:11px;font-weight:700;letter-spacing:.12em;
+  color:var(--g);background:var(--g2);
+  border:1.5px solid var(--g3);
+  padding:4px 12px;border-radius:50px;margin-bottom:14px;
+}
+.sec-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--g);flex-shrink:0;}
+.sec-title{font-size:clamp(20px,3.5vw,28px);font-weight:900;line-height:1.22;letter-spacing:-.025em;margin-bottom:8px;}
+.sec-desc{font-size:14px;color:var(--ink2);line-height:1.75;margin-bottom:24px;}
+
+/* NAV */
+.nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,253,245,.96);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:2px solid var(--border);padding:12px 0;
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-size:17px;font-weight:900;letter-spacing:-.03em;}
+.nav-logo span{color:var(--r);}
+.nav-cta{
+  background:var(--r);color:#fff;
+  padding:9px 20px;border-radius:50px;
+  font-size:13px;font-weight:700;
+  border:2px solid var(--ink);
+  box-shadow:3px 3px 0 var(--ink);
+  transition:transform .1s,box-shadow .1s;
+}
+.nav-cta:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink);}
+
+/* STRIPE */
+.stripe{height:6px;background:repeating-linear-gradient(90deg,var(--y) 0,var(--y) 20px,var(--r) 20px,var(--r) 40px,var(--g) 40px,var(--g) 60px,var(--white) 60px,var(--white) 80px);}
+
+/* HERO */
+.hero{background:var(--y);padding:60px 0 52px;position:relative;overflow:hidden;border-bottom:3px solid var(--ink);}
+.hero-circle1{position:absolute;right:-80px;top:-80px;width:360px;height:360px;border-radius:50%;background:rgba(255,255,255,.28);pointer-events:none;}
+.hero-circle2{position:absolute;left:-50px;bottom:-90px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.2);pointer-events:none;}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:11px;font-weight:700;letter-spacing:.12em;
+  background:rgba(255,255,255,.55);border:1.5px solid rgba(28,28,28,.15);
+  padding:5px 14px;border-radius:50px;margin-bottom:20px;color:var(--ink);
+}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--r);animation:pulse 1.6s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.8)}}
+.hero h1{font-size:clamp(30px,6vw,50px);font-weight:900;line-height:1.1;letter-spacing:-.035em;color:var(--ink);margin-bottom:12px;}
+.hero h1 b{color:var(--r);}
+.hero-lead{font-size:15px;color:rgba(28,28,28,.7);line-height:1.75;max-width:480px;margin-bottom:32px;}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;}
+.btn-main{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--r);color:#fff;
+  padding:14px 28px;border-radius:50px;
+  font-size:15px;font-weight:700;
+  cursor:pointer;border:2px solid var(--ink);font-family:inherit;
+  box-shadow:4px 4px 0 var(--ink);
+  transition:transform .1s,box-shadow .1s;
+}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);}
+.btn-main:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink);}
+.btn-outline{
+  display:inline-flex;align-items:center;
+  background:var(--white);color:var(--ink);
+  padding:14px 22px;border-radius:50px;
+  font-size:14px;font-weight:700;
+  cursor:pointer;border:2px solid var(--ink);font-family:inherit;
+  box-shadow:3px 3px 0 var(--ink);
+  transition:transform .1s,box-shadow .1s,background .15s;
+}
+.btn-outline:hover{background:var(--y2);transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink);}
+.hero-trust{display:flex;gap:10px;flex-wrap:wrap;}
+.trust-pill{
+  display:inline-flex;align-items:center;gap:5px;
+  background:rgba(255,255,255,.6);border:1.5px solid rgba(28,28,28,.12);
+  padding:5px 12px;border-radius:50px;font-size:12px;font-weight:700;
+}
+.trust-pill::before{content:'✓';color:var(--g);}
+
+/* STATS */
+.stats-bar{background:var(--ink);border-bottom:3px solid var(--y);}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);}
+.stat-item{padding:26px 20px;text-align:center;border-right:1px solid rgba(255,255,255,.1);}
+.stat-item:last-child{border-right:none;}
+.stat-num{font-size:34px;font-weight:900;color:var(--y);line-height:1;}
+.stat-label{font-size:11px;color:rgba(255,255,255,.5);margin-top:5px;line-height:1.5;}
+
+/* WHO */
+.who-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.who-card{
+  background:var(--white);border:2px solid var(--border);
+  border-radius:14px;padding:20px 16px;
+  transition:border-color .2s,transform .2s,box-shadow .2s;
+}
+.who-card:hover{border-color:var(--y);transform:translateY(-4px);box-shadow:0 8px 20px rgba(245,200,0,.18);}
+.who-icon{font-size:26px;margin-bottom:10px;}
+.who-name{font-size:14px;font-weight:700;margin-bottom:4px;}
+.who-sub{font-size:12px;color:var(--ink2);line-height:1.55;}
+
+/* BA */
+.ba-wrap{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.ba-col{border-radius:14px;padding:22px 20px;border:2px solid;}
+.ba-before{background:var(--r2);border-color:var(--r3);}
+.ba-after{background:var(--g2);border-color:var(--g3);}
+.ba-head{font-size:11px;font-weight:700;letter-spacing:.08em;margin-bottom:14px;}
+.ba-before .ba-head{color:var(--r);}
+.ba-after .ba-head{color:var(--g);}
+.ba-list{list-style:none;}
+.ba-list li{
+  display:flex;align-items:baseline;gap:8px;
+  font-size:13px;line-height:1.55;
+  padding:6px 0;border-bottom:1px solid rgba(0,0,0,.07);color:var(--ink2);
+}
+.ba-list li:last-child{border-bottom:none;}
+.ba-icon{flex-shrink:0;font-weight:900;}
+.ba-before .ba-icon{color:var(--r);}
+.ba-after .ba-icon{color:var(--g);}
+
+/* SERVICE TABS */
+.tab-btns{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px;}
+.tab-btn{
+  background:var(--white);border:2px solid var(--border);
+  border-radius:50px;padding:7px 16px;
+  font-size:13px;font-weight:700;
+  cursor:pointer;font-family:inherit;color:var(--ink2);
+  transition:all .15s;
+}
+.tab-btn:hover{border-color:var(--y);color:var(--ink);background:var(--y3);}
+.tab-btn.active{background:var(--y);border-color:var(--ink);color:var(--ink);box-shadow:2px 2px 0 var(--ink);}
+.tab-panel{display:none;}
+.tab-panel.active{display:block;}
+.svc-card{background:var(--white);border:2px solid var(--border);border-radius:18px;padding:26px;}
+.svc-num{
+  display:inline-block;font-size:10px;font-weight:700;letter-spacing:.12em;
+  background:var(--y3);border:1.5px solid var(--y);
+  padding:3px 10px;border-radius:50px;margin-bottom:10px;
+}
+.svc-name{font-size:20px;font-weight:900;margin-bottom:6px;letter-spacing:-.02em;}
+.svc-tagline{font-size:14px;color:var(--ink2);line-height:1.65;margin-bottom:18px;}
+.svc-points{list-style:none;margin-bottom:20px;}
+.svc-points li{
+  display:flex;gap:8px;align-items:baseline;
+  font-size:13px;color:var(--ink2);line-height:1.6;
+  padding:7px 0;border-bottom:1px solid var(--border);
+}
+.svc-points li:last-child{border-bottom:none;}
+.svc-points li::before{content:'→';color:var(--g);flex-shrink:0;font-weight:700;}
+.svc-example{background:var(--y3);border:1.5px solid var(--y);border-radius:10px;padding:14px 16px;}
+.svc-ex-label{font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink);margin-bottom:5px;}
+.svc-ex-text{font-size:13px;color:var(--ink);line-height:1.65;}
+
+/* RESULTS */
+.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.result-card{
+  background:var(--white);border:2px solid var(--border);
+  border-radius:14px;padding:20px 16px;
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.result-card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(43,168,74,.15);border-color:var(--g3);}
+.result-num{font-size:32px;font-weight:900;color:var(--r);line-height:1;}
+.result-label{font-size:12px;color:var(--ink2);margin-top:6px;line-height:1.5;}
+.result-from{font-size:11px;color:var(--ink3);margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:8px;}
+.faq-item{border:2px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .2s;}
+.faq-item.open{border-color:var(--y);}
+.faq-q{
+  width:100%;background:var(--white);border:none;
+  padding:16px 18px;font-size:14px;font-weight:700;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  cursor:pointer;font-family:inherit;color:var(--ink);text-align:left;transition:background .15s;
+}
+.faq-q:hover{background:var(--y3);}
+.faq-item.open .faq-q{background:var(--y3);}
+.faq-icon{
+  width:24px;height:24px;flex-shrink:0;border-radius:50%;
+  background:var(--bg2);border:1.5px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;font-style:normal;color:var(--ink);font-weight:700;
+  transition:transform .2s,background .15s,border-color .15s;
+}
+.faq-item.open .faq-icon{transform:rotate(45deg);background:var(--y);border-color:var(--ink);}
+.faq-a{
+  display:none;padding:14px 18px 16px;
+  font-size:13px;color:var(--ink2);line-height:1.8;
+  background:var(--cream);border-top:1.5px solid var(--y);
+}
+.faq-a strong{color:var(--ink);}
+.faq-item.open .faq-a{display:block;}
+
+/* CTA */
+.cta-banner{background:var(--g);padding:56px 0;text-align:center;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);}
+.cta-banner h2{font-size:clamp(18px,3vw,26px);font-weight:900;color:#fff;line-height:1.3;margin-bottom:10px;}
+.cta-banner p{font-size:14px;color:rgba(255,255,255,.85);margin-bottom:28px;line-height:1.75;}
+.btn-cta-white{
+  display:inline-flex;align-items:center;
+  background:var(--white);color:var(--g);
+  padding:14px 32px;border-radius:50px;
+  font-size:16px;font-weight:900;
+  cursor:pointer;border:2px solid var(--ink);font-family:inherit;
+  box-shadow:4px 4px 0 var(--ink);transition:transform .1s,box-shadow .1s;
+}
+.btn-cta-white:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);}
+.cta-note{font-size:12px;color:rgba(255,255,255,.65);margin-top:14px;}
+
+/* FORM */
+.form-section{background:var(--y3);}
+.form-wrap{background:var(--white);border:2px solid var(--border);border-radius:18px;padding:32px;}
+.checklist{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px;}
+.check-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink2);}
+.check-item::before{
+  content:'✓';color:var(--white);background:var(--g);
+  font-size:10px;font-weight:900;
+  width:18px;height:18px;border-radius:50%;
+  display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.f-field{display:flex;flex-direction:column;gap:5px;}
+.f-field.full{grid-column:span 2;}
+.f-label{font-size:12px;font-weight:700;color:var(--ink2);}
+.f-field input,.f-field select,.f-field textarea{
+  background:var(--cream);border:2px solid var(--border);
+  border-radius:8px;padding:10px 13px;
+  font-size:14px;font-family:inherit;color:var(--ink);
+  outline:none;transition:border-color .15s,box-shadow .15s;-webkit-appearance:none;
+}
+.f-field input:focus,.f-field select:focus,.f-field textarea:focus{
+  border-color:var(--y);box-shadow:0 0 0 3px rgba(245,200,0,.2);background:var(--white);
+}
+.f-field textarea{min-height:88px;resize:vertical;}
+.f-submit{
+  width:100%;margin-top:8px;
+  background:var(--r);color:#fff;
+  border:2px solid var(--ink);border-radius:50px;
+  padding:15px;font-size:15px;font-weight:900;
+  cursor:pointer;font-family:inherit;
+  box-shadow:4px 4px 0 var(--ink);transition:transform .1s,box-shadow .1s;
+}
+.f-submit:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);}
+.f-submit:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink);}
+.f-note{font-size:11px;color:var(--ink3);text-align:center;margin-top:10px;}
+.success-box{
+  display:none;background:var(--g2);border:2px solid var(--g3);
+  border-radius:12px;padding:30px;text-align:center;
+}
+.success-box p{font-size:17px;font-weight:900;color:var(--g);margin-bottom:6px;}
+.success-box span{font-size:13px;color:var(--ink2);}
+
+/* FOOTER */
+.footer{background:var(--ink);padding:28px 0;text-align:center;font-size:12px;color:#666;line-height:2;}
+.footer a{color:#999;}
+.footer a:hover{color:var(--y);}
+.footer-logo{font-size:16px;font-weight:900;color:var(--white);margin-bottom:6px;}
+.footer-logo span{color:var(--y);}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* RESPONSIVE */
+@media(max-width:680px){
+  .wrap{padding:0 16px;}
+  .section{padding:38px 0;}
+  .sec-title{font-size:20px;}
+  .hero{padding:44px 0 38px;}
+  .hero h1{font-size:28px;}
+  .hero-lead{font-size:14px;}
+  .who-grid{grid-template-columns:1fr 1fr;}
+  .ba-wrap{grid-template-columns:1fr;}
+  .result-grid{grid-template-columns:1fr 1fr;}
+  .stats-grid{grid-template-columns:repeat(3,1fr);}
+  .stat-num{font-size:26px;}
+  .stat-item{padding:18px 10px;}
+  .form-wrap{padding:20px 16px;}
+  .form-grid{grid-template-columns:1fr;}
+  .f-field.full{grid-column:span 1;}
+  .checklist{gap:10px;}
+  .tab-btn{font-size:12px;padding:6px 12px;}
+  .svc-name{font-size:17px;}
+  .btn-main,.btn-outline{padding:12px 18px;font-size:14px;}
+  .btn-cta-white{font-size:14px;padding:12px 24px;}
+}
+@media(max-width:400px){
+  .who-grid{grid-template-columns:1fr;}
+  .stats-grid{grid-template-columns:1fr;}
+  .stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}
+  .stat-item:last-child{border-bottom:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="stripe"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="wrap">
+    <div class="nav-inner">
+      <div class="nav-logo">PRIME<span>AD</span></div>
+      <a href="tel:16440953" class="nav-cta">무료 상담 신청</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-circle1"></div>
+  <div class="hero-circle2"></div>
+  <div class="wrap">
+    <div class="hero-kicker"><span class="live-dot"></span>온라인 마케팅 무료 상담</div>
+    <h1>사장님, 지금<br><b>광고비 제대로</b><br>쓰고 계세요?</h1>
+    <p class="hero-lead">홍보는 하고 싶은데 어디서부터 시작해야 할지 모르겠다면<br>지금 바로 무료로 물어보세요. 복잡한 건 저희가 다 설명해 드립니다.</p>
+    <div class="hero-btns">
+      <a href="tel:16440953" class="btn-main">지금 무료 상담 신청하기 →</a>
+      <a href="#faq" class="btn-outline">자주 묻는 질문 보기</a>
+    </div>
+    <div class="hero-trust">
+      <span class="trust-pill">누적 프로젝트 300+</span>
+      <span class="trust-pill">재계약율 90%</span>
+      <span class="trust-pill">상담 후 부담 없이 결정</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-num">300<span style="font-size:20px">+</span></div>
+        <div class="stat-label">누적 프로젝트<br>다양한 업종 레퍼런스</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">140<span style="font-size:20px">+</span></div>
+        <div class="stat-label">제휴 언론사<br>보도자료 동시 배포</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">90<span style="font-size:20px">%</span></div>
+        <div class="stat-label">광고주 재계약율<br>성과로 증명</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHO -->
+<section class="section" id="who">
+  <div class="wrap">
+    <span class="sec-tag">이런 분께 딱 맞습니다</span>
+    <h2 class="sec-title reveal">업종·규모 상관없이<br>홍보가 필요한 모든 사업자</h2>
+    <p class="sec-desc reveal">처음 창업했든, 몇 년째 운영 중이든 — 온라인에서 고객을 못 만나고 있다면 지금이 시작할 때입니다.</p>
+    <div class="who-grid">
+      <div class="who-card reveal"><div class="who-icon">🏪</div><div class="who-name">신규 창업자</div><div class="who-sub">개업했는데 아무도 모른다. 첫 고객을 빨리 만들고 싶다.</div></div>
+      <div class="who-card reveal"><div class="who-icon">📉</div><div class="who-name">기존 사업자</div><div class="who-sub">예전엔 잘 됐는데 요즘 손님이 줄었다. 다시 살려야 한다.</div></div>
+      <div class="who-card reveal"><div class="who-icon">📣</div><div class="who-name">홍보가 필요한 분</div><div class="who-sub">제품·서비스는 좋은데 알리는 방법을 모른다.</div></div>
+      <div class="who-card reveal"><div class="who-icon">💰</div><div class="who-name">비용 걱정되는 분</div><div class="who-sub">큰 예산 없이도 효과를 내고 싶다. 가성비 좋은 마케팅이 궁금하다.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE/AFTER -->
+<section class="section" style="background:var(--bg2);">
+  <div class="wrap">
+    <span class="sec-tag">지금과 달라지는 것</span>
+    <h2 class="sec-title reveal">마케팅 전 vs 후,<br>이렇게 달라집니다</h2>
+    <p class="sec-desc reveal">막연하게 느껴지는 변화를 구체적으로 보여드립니다.</p>
+    <div class="ba-wrap reveal">
+      <div class="ba-col ba-before">
+        <div class="ba-head">지금 이 상황 아닌가요?</div>
+        <ul class="ba-list">
+          <li><span class="ba-icon">✕</span>블로그 올려도 검색에 안 보임</li>
+          <li><span class="ba-icon">✕</span>광고비 썼는데 문의 0건</li>
+          <li><span class="ba-icon">✕</span>경쟁 업체만 상위에 뜸</li>
+          <li><span class="ba-icon">✕</span>SNS 게시물, 좋아요만 몇 개</li>
+          <li><span class="ba-icon">✕</span>어디에 돈 써야 할지 모르겠음</li>
+        </ul>
+      </div>
+      <div class="ba-col ba-after">
+        <div class="ba-head">함께하면 이렇게 됩니다</div>
+        <ul class="ba-list">
+          <li><span class="ba-icon">✓</span>내 업체가 검색 상단에 노출</li>
+          <li><span class="ba-icon">✓</span>한 달 안에 실제 문의 증가</li>
+          <li><span class="ba-icon">✓</span>리뷰·기사로 브랜드 신뢰 형성</li>
+          <li><span class="ba-icon">✓</span>타겟 고객에게만 정밀 광고</li>
+          <li><span class="ba-icon">✓</span>예산별 최적 전략 설계</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <span class="sec-tag">제공 서비스</span>
+    <h2 class="sec-title reveal">어떤 방식으로 홍보해 드리냐고요?</h2>
+    <p class="sec-desc reveal">탭을 눌러 각 서비스가 실제로 어떻게 작동하는지 확인해 보세요.</p>
+    <div class="tab-btns" role="tablist">
+      <button class="tab-btn active" onclick="switchTab(0,this)">🗺 플레이스</button>
+      <button class="tab-btn" onclick="switchTab(1,this)">✍️ 블로그</button>
+      <button class="tab-btn" onclick="switchTab(2,this)">🔍 검색광고</button>
+      <button class="tab-btn" onclick="switchTab(3,this)">📱 메타광고</button>
+      <button class="tab-btn" onclick="switchTab(4,this)">📰 언론홍보</button>
+    </div>
+    <div id="tp0" class="tab-panel active"><div class="svc-card"><div class="svc-num">01 · LOCAL SEO</div><div class="svc-name">네이버 플레이스 최적화</div><div class="svc-tagline">"근처 맛집" 검색했을 때 내 가게가 상단에 뜨도록 만드는 작업입니다.</div><ul class="svc-points"><li>고객이 실제로 검색하는 키워드 분석 후 적용</li><li>클릭률 높이는 사진·소개글 최적화</li><li>지도 상단 노출로 오프라인 방문 고객 유도</li></ul><div class="svc-example"><div class="svc-ex-label">실제 사례</div><div class="svc-ex-text">서울 강남 헤어샵 — 플레이스 최적화 3주 후 "강남 헤어샵" 검색 3위 진입. 예약 문의 월 40건 → 120건으로 증가.</div></div></div></div>
+    <div id="tp1" class="tab-panel"><div class="svc-card"><div class="svc-num">02 · BLOG CONTENT</div><div class="svc-name">블로그 · 리뷰 마케팅</div><div class="svc-tagline">고객이 구매 전에 찾아보는 리뷰와 정보 글로 검색 결과를 채웁니다.</div><ul class="svc-points"><li>전문 체험단·기자단 섭외 및 콘텐츠 기획</li><li>"솔직 후기" 형태의 신뢰도 높은 리뷰 생산</li><li>브랜드 공식 블로그 기획·운영</li></ul><div class="svc-example"><div class="svc-ex-label">실제 사례</div><div class="svc-ex-text">경기 분당 피부과 — 체험단 20명 투입 후 "분당 피부과 추천" 검색 1페이지 블로그 8개 점령. 신규 예약 2배 증가.</div></div></div></div>
+    <div id="tp2" class="tab-panel"><div class="svc-card"><div class="svc-num">03 · KEYWORD ADS</div><div class="svc-name">네이버 · 구글 검색광고</div><div class="svc-tagline">지금 당장 구매할 사람이 검색할 때 내 광고가 바로 뜨게 합니다.</div><ul class="svc-points"><li>경쟁이 적고 전환율 높은 키워드 발굴</li><li>클릭당 비용(CPC) 최소화 입찰 전략</li><li>광고 문구 A/B 테스트로 전환율 지속 개선</li></ul><div class="svc-example"><div class="svc-ex-label">실제 사례</div><div class="svc-ex-text">인천 이사업체 — 롱테일 키워드 세팅 후 CPC 절반으로 줄이면서 월 견적 문의 3배 증가. 동일 예산 대비 효율 2.8배.</div></div></div></div>
+    <div id="tp3" class="tab-panel"><div class="svc-card"><div class="svc-num">04 · META ADS</div><div class="svc-name">인스타그램 · 페이스북 광고</div><div class="svc-tagline">아직 내 브랜드를 모르는 사람에게 먼저 다가가는 광고입니다.</div><ul class="svc-points"><li>나이·관심사·행동 기반 초정밀 타겟 설정</li><li>스크롤 멈추게 하는 크리에이티브 제작</li><li>머신러닝 기반 ROAS 지속 최적화</li></ul><div class="svc-example"><div class="svc-ex-label">실제 사례</div><div class="svc-ex-text">온라인 뷰티 쇼핑몰 — 메타 광고 리타겟팅 세팅 2개월 만에 ROAS 180% → 450%로 개선. 광고비 동결 상태에서 매출 2.5배.</div></div></div></div>
+    <div id="tp4" class="tab-panel"><div class="svc-card"><div class="svc-num">05 · PRESS PR</div><div class="svc-name">언론사 보도자료 배포</div><div class="svc-tagline">네이버 뉴스 탭에 내 브랜드가 기사로 뜨면 신뢰도가 달라집니다.</div><ul class="svc-points"><li>140개 제휴 언론사 동시 배포</li><li>포털 뉴스 탭 상위 노출로 검색 장악</li><li>배포된 기사를 SNS·랜딩페이지에 2차 활용</li></ul><div class="svc-example"><div class="svc-ex-label">실제 사례</div><div class="svc-ex-text">B2B IT 스타트업 — 보도자료 배포 후 "OO 솔루션" 검색 시 뉴스 기사 5개 노출. 기업 도입 문의 한 달 만에 5배 폭증.</div></div></div></div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="section" style="background:var(--bg2);">
+  <div class="wrap">
+    <span class="sec-tag">실제 성과</span>
+    <h2 class="sec-title reveal">말이 아니라 숫자로 보여드립니다</h2>
+    <p class="sec-desc reveal">파트너사들이 직접 경험한 실제 데이터입니다.</p>
+    <div class="result-grid">
+      <div class="result-card reveal"><div class="result-num">450%</div><div class="result-label">메타 광고 ROAS<br>2개월 만에 달성</div><div class="result-from">글로벌 코스메틱 B사</div></div>
+      <div class="result-card reveal"><div class="result-num">3배</div><div class="result-label">플레이스 최적화 후<br>오프라인 방문객 증가</div><div class="result-from">전국 F&amp;B 프랜차이즈</div></div>
+      <div class="result-card reveal"><div class="result-num">5배</div><div class="result-label">언론홍보 후<br>B2B 도입 문의 증가</div><div class="result-from">IT 솔루션 스타트업</div></div>
+      <div class="result-card reveal"><div class="result-num">90%</div><div class="result-label">광고주 재계약율<br>결과로 증명</div><div class="result-from">누적 프로젝트 300+ 기준</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <span class="sec-tag">자주 묻는 질문</span>
+    <h2 class="sec-title reveal">이런 게 궁금하셨죠?</h2>
+    <p class="sec-desc reveal">상담 전에 가장 많이 물어보시는 질문들을 먼저 답해드립니다.</p>
+    <div class="faq-list">
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">예산이 많지 않아도 할 수 있나요?<i class="faq-icon">+</i></button><div class="faq-a">네, 가능합니다. 월 30만 원대 소액 예산부터 시작할 수 있는 플레이스·블로그 패키지가 있습니다. <strong>예산 규모에 맞춰 ROI가 가장 높은 채널을 먼저 추천</strong>해 드리기 때문에, 작게 시작하고 효과 확인 후 늘려가는 방식으로도 충분히 성과를 낼 수 있습니다.</div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">효과가 언제부터 나오나요?<i class="faq-icon">+</i></button><div class="faq-a">채널마다 다릅니다. <strong>검색광고·메타 광고는 세팅 직후 1~2주 내</strong>에 유입이 시작됩니다. 플레이스 최적화는 2~4주, 블로그 콘텐츠는 한 달 내외부터 검색 유입이 쌓입니다. 언론홍보는 배포 후 즉시 포털 뉴스에 노출됩니다.</div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">마케팅 지식이 없어도 괜찮나요?<i class="faq-icon">+</i></button><div class="faq-a">전혀 몰라도 됩니다. <strong>기획부터 세팅, 운영, 리포트까지 전부 대행</strong>해 드립니다. 사장님께서는 "어떤 고객을 원하는지"만 말씀해 주시면 됩니다. 담당 매니저가 쉽게 설명해 드립니다.</div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">기존에 다른 대행사를 써봤는데 효과가 없었어요.<i class="faq-icon">+</i></button><div class="faq-a">그런 경험이 있으신 분들이 특히 많이 찾아오십니다. 대부분의 이유는 <strong>채널 선택의 미스매치</strong>입니다. 먼저 현재 상황을 무료로 진단한 뒤 가장 효율적인 채널 조합을 추천해 드립니다.</div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">계약 기간이 있나요? 중간에 그만둘 수 있나요?<i class="faq-icon">+</i></button><div class="faq-a">대부분 <strong>3개월 기본 계약으로 시작</strong>합니다. 효과가 확인되면 연장하고, 방향을 바꾸고 싶으면 담당자와 조율합니다. 강압적인 장기 계약은 없습니다.</div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">상담은 어떻게 진행되나요?<i class="faq-icon">+</i></button><div class="faq-a">신청 후 <strong>1영업일 이내 담당자가 전화 또는 카카오톡으로 연락</strong>드립니다. 맞춤 마케팅 전략과 예상 비용을 제안해 드리며, 상담은 무료입니다.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="wrap">
+    <h2>지금 무료 상담 한 번만 받아보세요.<br>뭘 해야 할지 보입니다.</h2>
+    <p>복잡한 마케팅 용어 없이, 사장님 상황에 맞게 쉽게 설명해 드립니다.<br>상담 후 진행 여부는 자유롭게 결정하세요.</p>
+    <a href="tel:16440953" class="btn-cta-white">무료 상담 신청하기 →</a>
+    <div class="cta-note">평일 09:00–18:00 &nbsp;·&nbsp; 1644-0953 &nbsp;·&nbsp; help@primelabs.com</div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section form-section" id="contact">
+  <div class="wrap">
+    <span class="sec-tag">무료 상담 신청</span>
+    <h2 class="sec-title reveal">지금 바로 연락드립니다</h2>
+    <p class="sec-desc reveal">아래 정보를 남겨주시면 1영업일 이내 담당자가 연락드립니다.</p>
+    <div class="form-wrap reveal">
+      <div class="checklist">
+        <span class="check-item">무료 마케팅 현황 진단</span>
+        <span class="check-item">경쟁사 분석 제공</span>
+        <span class="check-item">맞춤 전략 제안</span>
+        <span class="check-item">진행 여부 자유 결정</span>
+      </div>
+      <div id="formBody">
+        <div class="form-grid">
+          <div class="f-field"><label class="f-label" for="fname">성함 *</label><input id="fname" type="text" placeholder="홍길동" autocomplete="name"></div>
+          <div class="f-field"><label class="f-label" for="fphone">연락처 *</label><input id="fphone" type="tel" placeholder="010-0000-0000" autocomplete="tel"></div>
+          <div class="f-field"><label class="f-label" for="fcompany">업체명 *</label><input id="fcompany" type="text" placeholder="예: 홍길동 치킨"></div>
+          <div class="f-field"><label class="f-label" for="fservice">관심 서비스</label>
+            <select id="fservice">
+              <option value="">선택해 주세요</option>
+              <option>플레이스 최적화</option>
+              <option>블로그 · 리뷰 마케팅</option>
+              <option>네이버 · 구글 검색광고</option>
+              <option>메타(인스타 · 페이스북) 광고</option>
+              <option>언론 보도자료 배포</option>
+              <option>어떤 게 맞는지 모르겠어요 — 추천받고 싶어요</option>
+            </select>
+          </div>
+          <div class="f-field full"><label class="f-label" for="fmsg">현재 상황 또는 문의 내용</label><textarea id="fmsg" placeholder="예: 개업한 지 3개월인데 손님이 없어요 / 광고비 월 50만 원 예산으로 시작하고 싶어요"></textarea></div>
+        </div>
+        <a href="tel:16440953" class="f-submit" style="display:block;text-align:center;text-decoration:none;">무료 상담 신청하기 →</a>
+        <p class="f-note">수집된 정보는 상담 목적으로만 사용되며 제3자에게 제공되지 않습니다.</p>
+      </div>
+      <div class="success-box" id="successBox">
+        <p>✅ 신청이 완료되었습니다!</p>
+        <span>담당자가 1영업일 이내로 연락드립니다.<br>프라임애드와 함께 성장을 시작하겠습니다.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    (주)프라임랩스 &nbsp;|&nbsp; 1644-0953<br>
+    경기도 고양시 덕양구 으뜸로8 지식산업센터 615호
+  </div>
+</footer>
+<div class="stripe"></div>
+
+<script>
+function switchTab(idx,btn){
+  document.querySelectorAll('.tab-panel').forEach((p,i)=>p.classList.toggle('active',i===idx));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+}
+function toggleFaq(btn){
+  const item=btn.closest('.faq-item');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el=>el.classList.remove('open'));
+  if(!isOpen)item.classList.add('open');
+}
+function submitForm(){
+  const n=document.getElementById('fname').value.trim();
+  const p=document.getElementById('fphone').value.trim();
+  const c=document.getElementById('fcompany').value.trim();
+  if(!n||!p||!c){alert('성함, 연락처, 업체명은 필수 입력 항목입니다.');return;}
+  document.getElementById('formBody').style.display='none';
+  document.getElementById('successBox').style.display='block';
+}
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+},{threshold:0.1,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach((el,i)=>{
+  el.style.transitionDelay=(i%4)*0.07+'s';obs.observe(el);
+});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+</script>
+</body>
+</html>
